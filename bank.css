@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    padding: 50px 0;
+    font-family: sans-serif;
+    background: rgb(231, 205, 255);
+}
+h2{
+    margin: 30px;
+    color: blueviolet;
+    font-size: 30px;
+}
+.container{
+    border: 2px solid blueviolet;
+    max-width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background: rgb(213, 168, 255);
+    padding: 15px 0;
+}
+#withdrawInput{
+    height: 30px;
+    border-radius: 50px;
+    outline: blueviolet;
+    border: none;
+    padding: 0 10px;
+    margin: 20px 0;
+}
+#withdrawInput:focus{
+    border: blueviolet 2px solid;
+}
+#withdrawButton{
+    height: 30px;
+    border-radius: 50px;
+    background: blueviolet;
+    color: rgb(213, 168, 255);
+    border: none;
+    padding: 0 5px;
+    margin: 20px 0;
+}
+#depositButton{
+    height: 30px;
+    border-radius: 50px;
+    background: blueviolet;
+    color: rgb(213, 168, 255);
+    border: none;
+    padding: 0 5px;
+    margin: 20px 0;
+}
+
+@media(max-width: 400px){
+    #withdrawInput{
+        width: 80%;
+    }
+    .container{
+        max-width: 95%;
+    }
+}
